@@ -1,5 +1,41 @@
 {
-  "konser": [{ "id": 1, "title": "rammstein", "tarih": "12/02/2023" }],
-  "tiyatro": [{ "id": 1, "title": "hamlet", "tarih": "1/05/2022" }],
-  "resim": [{ "title": "Osman Hamdi Bey Sergisi", "tarih": "1/05/2020" }]
+  "konser": [
+    {
+      "id": 1,
+      "photos":["../client/src/img/rammstein.png","photo2"],
+      "title": "rammstein",
+      "description":"rammstein konseri",
+      "tarih": {
+        "start":"12/02/2023",
+        "end":"12/02/2023"
+      },
+      "location":"Sivas"
+
+    }
+  ],
+  "tiyatro": [
+    {
+      "id": 1,
+      "photos":["photo1","photo2"],
+      "title": "hamlet",
+      "description":"hamlet tiyatro gösterisi",
+      "tarih": {
+        "start":"1/05/2022",
+        "end":"1/05/2022"
+      },
+      "location":"İstanbul"
+    }
+  ],
+  "resim": [
+    {
+      "title": "Osman Hamdi Bey Sergisi",
+      "photos":["photo1","photo2"],
+      "description":"hamlet tiyatro gösterisi",
+      "tarih": {
+        "start":"1/05/2020",
+        "end":"2/05/2020"
+      },
+      "location":"Ankara"
+    }
+  ]
 }
