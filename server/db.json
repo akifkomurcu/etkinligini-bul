@@ -1,0 +1,5 @@
+{
+  "konser": [{ "id": 1, "title": "rammstein", "tarih": "12/02/2023" }],
+  "tiyatro": [{ "id": 1, "title": "hamlet", "tarih": "1/05/2022" }],
+  "resim": [{ "title": "Osman Hamdi Bey Sergisi", "tarih": "1/05/2020" }]
+}
