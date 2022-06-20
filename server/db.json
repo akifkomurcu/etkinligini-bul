@@ -1,41 +1,42 @@
 {
-  "konser": [
+  "activities":[
     {
       "id": 1,
-      "photos":["../client/src/img/rammstein.png","photo2"],
-      "title": "rammstein",
-      "description":"rammstein konseri",
+      "photos":["https://img-comment-fun.9cache.com/media/ae6LBv/aZlWDn9d_700w_0.jpg","https://i.ytimg.com/vi/CAKA7kmXV7E/maxresdefault.jpg"],
+      "title": "Rammstein Konseri",
+      "description":"Rammstein Konseri",
       "tarih": {
         "start":"12/02/2023",
         "end":"12/02/2023"
       },
-      "location":"Sivas"
-
-    }
-  ],
-  "tiyatro": [
+      "location":"Sivas",
+      "type":"konser"
+  
+    },
     {
-      "id": 1,
-      "photos":["photo1","photo2"],
+      "id": 2,
+      "photos":["https://static01.nyt.com/images/2015/08/26/arts/HAMLET/HAMLET-superJumbo-v3.jpg","https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/07/30/17/38-Cumberbatch-PA.jpg?quality=75&width=1200&auto=webp"],
       "title": "hamlet",
       "description":"hamlet tiyatro gösterisi",
       "tarih": {
-        "start":"1/05/2022",
-        "end":"1/05/2022"
+        "start":"01/05/2022",
+        "end":"01/05/2022"
       },
-      "location":"İstanbul"
-    }
-  ],
-  "resim": [
+      "location":"İstanbul",
+      "type":"tiyatro"
+    },
     {
+      "id": 9,
       "title": "Osman Hamdi Bey Sergisi",
-      "photos":["photo1","photo2"],
+      "photos":["https://www.peramuzesi.org.tr/Repo/SliderAndBoxs/osman-hamdi-bey-sergi-2.jpg","https://idsb.tmgrup.com.tr/ly/uploads/images/2020/06/18/41605.jpg"],
       "description":"hamlet tiyatro gösterisi",
       "tarih": {
         "start":"1/05/2020",
         "end":"2/05/2020"
       },
-      "location":"Ankara"
+      "location":"Ankara",
+      "type":"resim"
     }
   ]
+
 }

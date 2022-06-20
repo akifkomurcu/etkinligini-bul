@@ -1,0 +1,52 @@
+{
+  "konser": [
+    {
+      "id": 1,
+      "photos": [
+        "https://img-comment-fun.9cache.com/media/ae6LBv/aZlWDn9d_700w_0.jpg",
+        "https://i.ytimg.com/vi/CAKA7kmXV7E/maxresdefault.jpg"
+      ],
+      "title": "Rammstein Konseri",
+      "description": "Rammstein Konseri",
+      "tarih": {
+        "start": "12/02/2023",
+        "end": "12/02/2023"
+      },
+      "location": "Sivas",
+      "type": "konser"
+    }
+  ],
+  "tiyatro": [
+    {
+      "id": 1,
+      "photos": [
+        "photo1",
+        "photo2"
+      ],
+      "title": "hamlet",
+      "description": "hamlet tiyatro gösterisi",
+      "tarih": {
+        "start": "1/05/2022",
+        "end": "1/05/2022"
+      },
+      "location": "İstanbul",
+      "type": "tiyatro"
+    }
+  ],
+  "resim": [
+    {
+      "title": "Osman Hamdi Bey Sergisi",
+      "photos": [
+        "photo1",
+        "photo2"
+      ],
+      "description": "hamlet tiyatro gösterisi",
+      "tarih": {
+        "start": "1/05/2020",
+        "end": "2/05/2020"
+      },
+      "location": "Ankara",
+      "type": "resim"
+    }
+  ]
+}

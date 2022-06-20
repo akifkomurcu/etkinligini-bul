@@ -7,7 +7,7 @@ function Card({ Activity }) {
     <>
       {Activity && (
         <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p="3">
-          <Link to={`/product/${Activity.id}`}>
+          <Link to={`/ActivitiesDetail/${Activity.id}`}>
             <Image
               className={style.productImage}
               src={Activity.photos[0]}
@@ -15,16 +15,24 @@ function Card({ Activity }) {
               borderRadius={50}
             ></Image>
             <Box p="6px">
-              <Box d="flex" alignItems="baseline">
-                {moment(Activity.tarih[0]).format("DD/MM/YYYY")}
+              <Box d="flex" alignItems="baseline" className={style.ortala}>
+                {moment(Activity.tarih[0]).format("DD/MM/YYYY")} -{" "}
+                {moment(Activity.tarih[1]).format("DD/MM/YYYY")}
               </Box>
-              <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
+              <Box
+                mt="1"
+                fontWeight="semibold"
+                as="h4"
+                lineHeight="tight"
+                className={style.ortala}
+              >
                 {Activity.title}
               </Box>
-              <Box>{Activity.price}</Box>
             </Box>
           </Link>
-          <Button colorScheme="teal">Add to Basket</Button>
+          {/* <Button className={style.ortala} colorScheme="teal">
+            Add to Basket
+          </Button> */}
         </Box>
       )}
     </>

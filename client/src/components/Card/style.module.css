@@ -2,3 +2,8 @@
   transition: transform 0.5s;
   transform: scale(1.06);
 }
+.ortala {
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+}
