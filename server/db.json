@@ -26,7 +26,7 @@
       "type":"tiyatro"
     },
     {
-      "id": 9,
+      "id": 3,
       "title": "Osman Hamdi Bey Sergisi",
       "photos":["https://www.peramuzesi.org.tr/Repo/SliderAndBoxs/osman-hamdi-bey-sergi-2.jpg","https://idsb.tmgrup.com.tr/ly/uploads/images/2020/06/18/41605.jpg"],
       "description":"hamlet tiyatro gösterisi",
@@ -36,6 +36,78 @@
       },
       "location":"Ankara",
       "type":"resim"
+    },
+    {
+      "id": 4,
+      "title": "Hayko Cepkin Konseri",
+      "photos":["https://staticws.biletix.com/static/images/live/event/eventimages/hayoocepkinUWL3F.png","https://i.sdacdn.com/haber/2021/03/20/hayko-cepkin-konser-ucretlerini-alamadigi-icin-14007997_2635_osd.jpg"],
+      "description":"Hayko Cepkin Konseri",
+      "tarih": {
+        "start":"1/05/2020",
+        "end":"2/05/2020"
+      },
+      "location":"Bursa",
+      "type":"konser"
+    },
+    {
+      "id": 5,
+      "title": "CSGO Espor Turnuvası",
+      "photos":["https://img.fanatik.com.tr/img/78/740x418/5e9d4e55ae298b1b4ca88158.jpg","https://idsb.tmgrup.com.tr/ly/uploads/images/2020/06/18/41605.jpg"],
+      "description":"CSGO Espor Turnuvası",
+      "tarih": {
+        "start":"1/05/2020",
+        "end":"2/05/2020"
+      },
+      "location":"Mersin",
+      "type":"Turnuva"
+    },
+    {
+      "id": 6,
+      "title": "Gençlik Festivali",
+      "photos":["https://www.peramuzesi.org.tr/Repo/SliderAndBoxs/osman-hamdi-bey-sergi-2.jpg","https://esportimes.mncdn.com/wp-content/uploads/2020/12/Espor-times-2020-yilinda-en-cok-kazanan-cs-go-takimlari.jpg"],
+      "description":"Gençlik Festivali",
+      "tarih": {
+        "start":"1/05/2020",
+        "end":"2/05/2020"
+      },
+      "location":"Trabzon",
+      "type":"Festival"
+    },
+    {
+      "id": 7,
+      "title": "Masa Tenisi Turnuvası",
+      "photos":["https://www.ayvaz.com/images/haberler/masa_tenisi_turnuvasi.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNfDdvdpxDweRFjsr_jA_kunHUKnW_DkTsyw&usqp=CAU"],
+      "description":"Masa Tenisi Turnuvası",
+      "tarih": {
+        "start":"1/05/2020",
+        "end":"2/05/2020"
+      },
+      "location":"Ankara",
+      "type":"Turnuva"
+    },
+    {
+      "id": 8,
+      "title": "Doğa kampı",
+      "photos":["https://www.flypgs.com/blog/wp-content/uploads/2018/05/istanbul-yakini-kamp-yapilacak-yerler.jpg","https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/12/18/e1/sahil-kamp-istanbul.jpg?w=900&h=600&s=1"],
+      "description":"Doğa kampı",
+      "tarih": {
+        "start":"1/05/2020",
+        "end":"2/05/2020"
+      },
+      "location":"Antalya",
+      "type":"Turnuva"
+    },
+    {
+      "id": 8,
+      "title": "Doğa kampı",
+      "photos":["https://www.flypgs.com/blog/wp-content/uploads/2018/05/istanbul-yakini-kamp-yapilacak-yerler.jpg","https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/12/18/e1/sahil-kamp-istanbul.jpg?w=900&h=600&s=1"],
+      "description":"Doğa kampı",
+      "tarih": {
+        "start":"1/05/2020",
+        "end":"2/05/2020"
+      },
+      "location":"Antalya",
+      "type":"Turnuva"
     }
   ]
 

@@ -23,7 +23,6 @@ function ActivitiesDetail() {
       <Box margin="10">
         <ImageGallery items={images} />
       </Box>
-      {/* <Button colorScheme="teal">add to basket</Button> */}
       <Text as="h2" fontSize="2xl">
         {data.title}
       </Text>

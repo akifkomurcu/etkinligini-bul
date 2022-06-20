@@ -1,7 +1,7 @@
 .nav {
   padding: 13px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: solid 1px;
   line-height: 2px;
   align-items: center;
@@ -12,6 +12,7 @@
 .nav .left .menu {
   display: flex;
   margin-left: 40px;
+  list-style-type: none;
 }
 .nav .left .menu li a {
   color: rgb(122, 122, 128);
@@ -26,4 +27,9 @@
 }
 .nav .right a:first-child {
   margin-right: 3px;
+}
+.logo {
+  font-weight: 700;
+  font-size: larger;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }

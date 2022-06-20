@@ -1,10 +1,14 @@
 import { Grid, Box, Flex, Button } from "@chakra-ui/react";
 import Card from "../../components/Card";
 import { useInfiniteQuery } from "react-query";
-import { fetchKonser } from "../../api";
+import { fetchActivites } from "../../api";
 import React from "react";
+import { useContext } from "react";
+import FilterContext from "../../components/Context/FilterContext";
 
 function Activities() {
+  const { result, setResult } = useContext(FilterContext);
+
   const {
     data,
     error,
@@ -13,7 +17,7 @@ function Activities() {
     isFetching,
     isFetchingNextPage,
     status,
-  } = useInfiniteQuery("konserler", fetchKonser, {
+  } = useInfiniteQuery("Activities", fetchActivites, {
     getNextPageParam: (lastGroup, allGroups) => {
       const morePagesExist = lastGroup?.length === 8;
       if (!morePagesExist) {
@@ -24,19 +28,34 @@ function Activities() {
   });
   if (status === "loading") return "Loading...";
   if (status === "error") return "An error has occurred: " + error.message;
-  console.log(data);
+
+  //filtered activities
+  const filtered = data.pages[0].filter((item) => {
+    return Object.keys(item).some((key) =>
+      item[key].toString().toLowerCase().includes(result.toLowerCase())
+    );
+  });
   return (
     <div>
       <Grid templateColumns="repeat(4, 1fr)" gap={1}>
+        {/* filtre yoksa çalışacak */}
         {data.pages.map((group, index) => (
           <React.Fragment key={index}>
-            {group.map((Activity, index) => (
-              <Box w="100%" key={index}>
-                <Card Activity={Activity} />
-              </Box>
-            ))}
+            {result === "" &&
+              group.map((activity, index) => (
+                <Box w="100%" key={index}>
+                  <Card Activity={activity} />
+                </Box>
+              ))}
           </React.Fragment>
         ))}
+        {/* filtre varsa çalışacak */}
+        {result !== "" &&
+          filtered.map((activity, index) => (
+            <Box w="100%" key={index}>
+              <Card Activity={activity} />
+            </Box>
+          ))}
       </Grid>
       <Flex mt="10" justifyContent="center" p={10}>
         <Button
