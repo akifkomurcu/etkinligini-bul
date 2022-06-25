@@ -6,22 +6,15 @@ function Card({ Activity }) {
   return (
     <>
       {Activity && (
-        <Box
-          borderWidth="1px"
-          borderRadius="lg"
-          overflow="hidden"
-          p="3"
-          width={450}
-          height={370}
-        >
+        <Box borderRadius="lg" overflow="hidden" p="3" width={450} height={370}>
           <Link to={`/ActivitiesDetail/${Activity.id}`}>
             <Image
               className={style.productImage}
               src={Activity.photos[0]}
               alt="ActPhoto"
               borderRadius={50}
-              maxWidth={430}
-              maxHeight={340}
+              width={430}
+              height={270}
             ></Image>
             <Box p="6px">
               <Box d="flex" alignItems="baseline" className={style.ortala}>

@@ -2,12 +2,22 @@ import { Grid, Box, Flex, Button } from "@chakra-ui/react";
 import Card from "../../components/Card";
 import { useInfiniteQuery } from "react-query";
 import { fetchActivites } from "../../api";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import FilterContext from "../../components/Context/FilterContext";
+import axios from "axios";
 
 function Activities() {
-  const { result, setResult } = useContext(FilterContext);
+  const { result } = useContext(FilterContext);
+  //holding allActivitiy datas
+  const [allData, setAllData] = useState("");
+  //for all datas
+
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_BASE_ENDPOINT}/activities`)
+      .then((res) => setAllData(res.data));
+  }, [result]);
 
   const {
     data,
@@ -30,11 +40,14 @@ function Activities() {
   if (status === "error") return "An error has occurred: " + error.message;
 
   //filtered activities
-  const filtered = data.pages[0].filter((item) => {
-    return Object.keys(item).some((key) =>
-      item[key].toString().toLowerCase().includes(result.toLowerCase())
-    );
-  });
+  const filtered = allData
+    ? allData.filter((item) => {
+        return Object.keys(item).some((key) =>
+          item[key].toString().toLowerCase().includes(result.toLowerCase())
+        );
+      })
+    : "";
+
   return (
     <div>
       <Grid templateColumns="repeat(4, 1fr)" gap={1}>
@@ -51,6 +64,8 @@ function Activities() {
         ))}
         {/* filtre varsa çalışacak */}
         {result !== "" &&
+          allData.length !== 0 &&
+          filtered &&
           filtered.map((activity, index) => (
             <Box w="100%" key={index}>
               <Card Activity={activity} />

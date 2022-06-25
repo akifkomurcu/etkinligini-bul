@@ -9,21 +9,23 @@
         "start":"12/02/2023",
         "end":"12/02/2023"
       },
-      "location":"Sivas",
-      "type":"konser"
+      "location":"sivas",
+      "type":"konser",
+      "price":100
   
     },
     {
       "id": 2,
       "photos":["https://static01.nyt.com/images/2015/08/26/arts/HAMLET/HAMLET-superJumbo-v3.jpg","https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/07/30/17/38-Cumberbatch-PA.jpg?quality=75&width=1200&auto=webp"],
-      "title": "hamlet",
-      "description":"hamlet tiyatro gösterisi",
+      "title": "Hamlet Tiyatro Gösterisi",
+      "description":"Hamlet, William Shakespeare tarafından 1599 ile 1601 yılları arasında yazılan temasında trajediyi işleyen oyundur. Danimarka'da geçen oyunda Prens Hamlet'in, kral olan babasını öldürdükten sonra tahta geçen ve annesi Gertrude ile evlenen amcası Claudius'tan nasıl intikam aldığını anlatır.",
       "tarih": {
         "start":"01/05/2022",
         "end":"01/05/2022"
       },
-      "location":"İstanbul",
-      "type":"tiyatro"
+      "location":"istanbul",
+      "type":"tiyatro",
+      "price":200
     },
     {
       "id": 3,
@@ -34,8 +36,9 @@
         "start":"1/05/2020",
         "end":"2/05/2020"
       },
-      "location":"Ankara",
-      "type":"resim"
+      "location":"ankara",
+      "type":"resim",
+      "price":50
     },
     {
       "id": 4,
@@ -46,69 +49,76 @@
         "start":"1/05/2020",
         "end":"2/05/2020"
       },
-      "location":"Bursa",
-      "type":"konser"
+      "location":"bursa",
+      "type":"konser",
+      "price":100
     },
     {
       "id": 5,
-      "title": "CSGO Espor Turnuvası",
-      "photos":["https://img.fanatik.com.tr/img/78/740x418/5e9d4e55ae298b1b4ca88158.jpg","https://idsb.tmgrup.com.tr/ly/uploads/images/2020/06/18/41605.jpg"],
-      "description":"CSGO Espor Turnuvası",
+      "title": "CSGO Espor ",
+      "photos":["https://img.fanatik.com.tr/img/78/740x418/5e9d4e55ae298b1b4ca88158.jpg","https://gaming4.cash/wp-content/uploads/2020/07/CSGO-Esports-History-How-a-Simple-Game-Became-a-Professional-Competition.png"],
+      "description":"CSGO Espor ",
       "tarih": {
         "start":"1/05/2020",
         "end":"2/05/2020"
       },
-      "location":"Mersin",
-      "type":"Turnuva"
+      "location":"mersin",
+      "type":"Turnuva",
+      "price":0
     },
     {
       "id": 6,
       "title": "Gençlik Festivali",
-      "photos":["https://www.peramuzesi.org.tr/Repo/SliderAndBoxs/osman-hamdi-bey-sergi-2.jpg","https://esportimes.mncdn.com/wp-content/uploads/2020/12/Espor-times-2020-yilinda-en-cok-kazanan-cs-go-takimlari.jpg"],
+      "photos":["https://i4.hurimg.com/i/hurriyet/75/1110x740/5919aa5c67b0aa0478c6f594.jpg","https://i4.hurimg.com/i/hurriyet/75/1110x740/5919aa5c67b0aa0478c6f594.jpg"],
       "description":"Gençlik Festivali",
       "tarih": {
         "start":"1/05/2020",
         "end":"2/05/2020"
       },
-      "location":"Trabzon",
-      "type":"Festival"
+      "location":"trabzon",
+      "type":"Festival",
+      "price":10
     },
     {
       "id": 7,
-      "title": "Masa Tenisi Turnuvası",
+      "title": "Masa Tenisi ",
       "photos":["https://www.ayvaz.com/images/haberler/masa_tenisi_turnuvasi.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNfDdvdpxDweRFjsr_jA_kunHUKnW_DkTsyw&usqp=CAU"],
-      "description":"Masa Tenisi Turnuvası",
+      "description":"Masa Tenisi ",
       "tarih": {
         "start":"1/05/2020",
         "end":"2/05/2020"
       },
-      "location":"Ankara",
-      "type":"Turnuva"
+      "location":"ankara",
+      "type":"Turnuva",
+      "price":0
     },
     {
       "id": 8,
       "title": "Doğa kampı",
-      "photos":["https://www.flypgs.com/blog/wp-content/uploads/2018/05/istanbul-yakini-kamp-yapilacak-yerler.jpg","https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/12/18/e1/sahil-kamp-istanbul.jpg?w=900&h=600&s=1"],
+      "photos":["https://www.neredekal.com/res/blog/1595401634_kapak.jpg","https://i0.wp.com/melkeontheroad.com/wp-content/uploads/2018/05/ilk-defa-kamp-yapacaklar%C4%B1n-bilmesi-gereken%C5%9Fer.jpg?fit=740%2C494&ssl=1"],
       "description":"Doğa kampı",
       "tarih": {
         "start":"1/05/2020",
         "end":"2/05/2020"
       },
-      "location":"Antalya",
-      "type":"Turnuva"
+      "location":"antalya",
+      "type":"Kamp",
+      "price":100
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Doğa kampı",
-      "photos":["https://www.flypgs.com/blog/wp-content/uploads/2018/05/istanbul-yakini-kamp-yapilacak-yerler.jpg","https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/12/18/e1/sahil-kamp-istanbul.jpg?w=900&h=600&s=1"],
+      "photos":["https://www.neredekal.com/res/blog/1595401634_kapak.jpg","https://i0.wp.com/melkeontheroad.com/wp-content/uploads/2018/05/ilk-defa-kamp-yapacaklar%C4%B1n-bilmesi-gereken%C5%9Fer.jpg?fit=740%2C494&ssl=1"],
       "description":"Doğa kampı",
       "tarih": {
         "start":"1/05/2020",
         "end":"2/05/2020"
       },
-      "location":"Antalya",
-      "type":"Turnuva"
+      "location":"çanakkale",
+      "type":"Kamp",
+      "price":100
     }
+   
   ]
 
 }

@@ -33,3 +33,8 @@
   font-size: larger;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+.middle {
+  display: flex;
+  /* padding: 0px 10px 0px 10px; */
+  margin-left: 10px;
+}
