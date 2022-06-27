@@ -1,28 +1,12 @@
 import { useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import { fetchActivity } from "../../api";
-import { Box, Text, Grid, GridItem, Button } from "@chakra-ui/react";
+import { Box, Text, Grid, GridItem } from "@chakra-ui/react";
 import ImageGallery from "react-image-gallery";
 import styles from "./styles.module.css";
 import Tilt from "react-parallax-tilt";
-import cities from "../../cities.json";
-import { useEffect, useState } from "react";
 
 function ActivitiesDetail() {
-  const [themeMode, setThemeMode] = useState("");
-  //maps
-
-  window.addEventListener("storage", myFunction);
-  function myFunction(event) {
-    setThemeMode(localStorage.getItem("chakra-ui-color-mode"));
-  }
-  window.onstorage = () => {
-    // When local storage changes, dump the list to
-    // the console.
-    console.log(
-      JSON.parse(window.localStorage.getItem("chakra-ui-color-mode"))
-    );
-  };
   const { Activity_id } = useParams();
 
   const { isLoading, error, data } = useQuery(
@@ -37,8 +21,6 @@ function ActivitiesDetail() {
     thumbnail: photo,
   }));
 
-  const city = cities.filter((city) => city.name === data.location);
-  console.log(themeMode);
   return (
     <>
       <Box className={styles.content}>
@@ -52,11 +34,7 @@ function ActivitiesDetail() {
           <Box className={styles.ActivitiesDetail}>
             <Grid templateColumns="repeat(5, 1fr)" gap={6}>
               <Tilt
-                className={
-                  themeMode === "light"
-                    ? styles.parallaxEffectGlareScale
-                    : styles.parallaxEffectGlareScaleLight
-                }
+                className={styles.parallaxEffectGlareScale}
                 perspective={500}
                 glareEnable={true}
                 glareMaxOpacity={0.45}
